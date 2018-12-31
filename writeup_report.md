@@ -112,7 +112,17 @@ model.add(Dense(1))
 
 #### 3. Creation of the Training Set & Training Process
 
-The training data was obtained from Udacity provided images (/opt/carnd_p3/data) in the workspace. This data was shuffled and used to train the model. As the size of the data increased due to data augmentation I switched to using generators.
+The training data was obtained from Udacity provided images (/opt/carnd_p3/data) in the workspace. This data was shuffled and used to 
+train the model. As the size of the data increased due to data augmentation I switched to using generators.
+
+To augment the data sat, I also flipped images and angles,
+- Randomly shuffled the data set.
+- Use OpenCV to convert to RGB for drive.py.
+- For steering angle associated with three images, I use correction factor for left and right images with correction factor of 0.2: increase the steering angle by 0.2 for left image and for the right one  decrease the steering angle by 0.2.
+
+![](examples/left.jpg) Left FOV<br>
+![](examples/center.jpg) Center FOV<br>
+![](examples/right.jpg) Right FOV
 
 After this training, the car was driving down the road all the time on the [first track](https://github.com/thayumaanavan/CarND-Behavioral-Cloning-P3/blob/master/video.mp4).
 
