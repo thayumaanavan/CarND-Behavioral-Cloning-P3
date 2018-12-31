@@ -112,7 +112,13 @@ model.add(Dense(1))
 
 #### 3. Creation of the Training Set & Training Process
 
-The training data was obtained from Udacity provided images (/opt/carnd_p3/data) in the workspace. This data was shuffled and used train the model. As the size of the data increased due to data augmentation I switched to using generators.
+The training data was obtained from Udacity provided images (/opt/carnd_p3/data) in the workspace. This data was shuffled and used to train the model. As the size of the data increased due to data augmentation I switched to using generators.
 
-After this training, the car was driving down the road all the time on the [first](https://github.com/vishal-kvn/CarND-Behavioral-Cloning-P3/blob/master/video.mp4).
+After this training, the car was driving down the road all the time on the [first track](https://github.com/vishal-kvn/CarND-Behavioral-Cloning-P3/blob/master/video.mp4).
+
+#### Output
+Output video: https://github.com/vishal-kvn/CarND-Behavioral-Cloning-P3/blob/master/video.mp4
+
+(or)
+
 Youtube link : https://youtu.be/4cvz0E5S3HQ
